@@ -1,0 +1,481 @@
+*{
+    padding: 0; 
+    margin: 0;
+     box-sizing: border-box;
+    }
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+:root{
+    --primary: indianred;
+    --secondary: rgba(15 , 10 , 29,0.849);
+    --light: #2f2f2f;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav1{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px gray;
+    text-align: left;
+
+}
+.nav1 .left{
+    flex-basis: 30%;
+    letter-spacing: 2px;
+}
+.nav1 .left a{
+    text-decoration: none;
+    color: rgb(105, 70, 219);
+}
+.nav1 .left a{
+    text-decoration: none;
+    color: rgb(68, 20, 226);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.nav1 .left{
+    flex-basis: 30%;
+    letter-spacing: 2px;
+
+}
+.nav1 .center div{
+    flex-basis:50%;
+}
+.nav1 .center h1{
+    letter-spacing: 0.2rem;
+    font-size: 4.2rem;
+
+}
+.nav1 .center h1 span{
+    color: blueviolet;
+}
+nav1{
+    font-size: 90rem;
+}
+
+
+
+.Right{
+    flex-basis: 15%;
+}
+.Right i{
+    font-size: 20px;
+    margin:0px 1px;
+
+    color: rgb(8, 8, 8);
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+
+}
+.nav1 .Right i:hover{
+    transform: rotate(360deg);
+}
+.nav2{
+    width: 100%;
+    height:70px;
+    line-height:70px;
+    display: inline-block;
+}
+.nav2 ul{
+    list-style: none;
+    text-align: center;
+
+
+}
+.nav2 ul li{
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+}
+.nav2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+    
+}
+.nav2 ul li a:hover{
+    color: rgb(127, 8, 239);
+}
+.nav2 ul li i{
+    color: rgb(127, 8, 239);
+    margin: 0px 5px;
+}
+.nav2 ul ul{
+    position: absolute;
+    top:70px;
+    left: 0;
+    display: none;
+
+}
+.nav2 ul ul li{
+    background-color:white;
+    border-bottom: 1px solid rgb(127, 8, 239);
+
+}
+.nav2 ul  li:hover>ul{
+    display: block;
+}
+
+.featured{
+    width: 100%;
+    height: 60vh;
+    background:linear-gradient(to right,rgba(0,0,0,0.97)20%,rgb(255,255,255,0.2)), url('img/g1.jpg');
+    background-size: cover;
+    background-position-x: top;
+    position: relative;
+}
+.featured-text{
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing:5px ;
+    font-family: 'Akaya Telivigala', cursive;
+
+}
+.featured-text button{
+    padding: 10px 20px ;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3) inset, -2px -2px 3px rgb(244, 23, 23) outside;
+    background-color: rgb(182, 207, 212);
+    margin: 20px 0px;
+    border: none;
+}
+.latest{
+    padding: 50px 100px;
+}
+.product-intro{
+    text-align: center;
+}
+.product-intro h1{
+    color: rgb(127, 8, 239);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.product-intro h1 span{
+    color:black; 
+}
+.product-intro{
+    color:rgb(217, 90, 11);
+    margin: 20px 0;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 4rem 0;
+
+}
+.card-container .card{
+    flex-basis:20%;
+    padding: 0.8rem;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    transition: 0.5 ease-in-out;
+    
+}
+.card i{
+    color:  gold;
+    margin:10px 0
+}
+.card button {
+    color: antiquewhite;
+    background-color: black;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 15px;
+    padding: 5px 20px; 
+}
+.card:hover img, .card:hover h1{
+    width: 80%;
+    color: blueviolet;
+    
+}
+.card.card::before {
+    content: '80% off';
+    width: 28%;
+    height: 26px;
+    border-radius:35px 390px 80px ;
+    line-height: 25px;
+    color:rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: blueviolet;
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+
+}
+.trends{
+    padding: 50px 100px;
+    background-color: rgb(0,0,0,0.01);
+}
+.trends .swiper{
+    width: 100%;
+    padding: 50px;
+    
+  }
+
+  .trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+footer{
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-round;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;    
+}
+footer div{
+    flex-basis:30%;
+}
+footer h1{
+    letter-spacing: 0.5rem;
+
+}
+footer h1 span{
+    color: blueviolet;
+}
+
+
+footer i{
+    margin: 0px 5px;
+}
+#sidenav{
+    display: none;
+}
+#menubar{
+    display: none;
+}
+@media only screen and (max-width:769px){
+   #sidenav{
+        display: block;
+    }
+    #menubar{
+        display: block;
+        position:fixed;
+        top: 6.7%;
+        left: 2px;
+        transform: translate(0%-50%);
+        z-index: 99;
+        background-color: rgb(254, 254, 255);
+        color: rgb(0, 0, 0);
+        font-size: 1.6rem;
+        padding: 3px 1.4px;
+        animation:animate 3s ease infinite;
+}
+@keyframes animate{
+    0%{
+        background-color:rgb(23, 5, 102);
+    }
+    100%{
+        background-color:aliceblue;
+    }                                                         
+}
+
+#sidenav{
+    width: 0px;
+    height:100vh;
+    line-height:70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.586);
+    padding-top: 70px;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+#sidenav ul{
+    list-style: none;
+    text-align: center;
+    
+}
+#sidenav ul li{
+    display: block;
+    width: 120px;
+    position: relative;
+    z-index: 99;
+    
+}
+#sidenav ul li a{
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+    font-weight: 500;
+    display: block;
+}
+#sidenav ul li a:hover{
+    color: rgb(127, 8, 239);
+}
+#sidenav ul li i{
+    color: rgb(127, 8, 239);
+    margin: 0px 5px;
+}
+
+#sidenav ul ul{
+    position: absolute;
+    left:90px ;
+    right: 2px;
+    display: none;
+
+}
+#sidenav ul ul li{
+    background-color:black(255, 255, 255);
+    border-bottom: 1px solid rgb(253, 253, 253);
+
+}
+#sidenav ul  li:hover>ul{
+    display: block;
+}
+    .nav1{
+
+        position: relative;
+        z-index: 2;
+        background-color: rgba(230, 229, 235, 0.895);
+    
+    }
+    .Right i{
+    display: none;
+
+    }
+    .nav2{
+        display: none;
+ 
+    }
+    .featured{
+        background-attachment: fixed;
+    }
+    .latest{
+        padding: 0px 50px;
+    }
+    .product-intro{
+        text-align: center;
+    }
+    .product-intro h1{
+        color: rgb(127, 8, 239);
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .product-intro h1 span{
+        color:black; 
+    }
+    .product-intro{
+        color:rgb(217, 90, 11);
+        margin: 20px 0;
+    }
+    .card-container{
+ 
+        margin: 2rem 0;
+    
+    }
+    .card-container .card{
+        flex-basis:20%;
+        padding: 0.8rem;
+        position: relative;
+        text-align: center;
+    }
+    .card img{
+        width: 100%;
+        transition: 0.5 ease-in-out;
+        
+    }
+    .card i{
+        color:  gold;
+        margin:10px 0
+    }
+    .card button {
+        color: antiquewhite;
+        background-color: black;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        margin: 15px;
+        padding: 5px 20px; 
+    }
+    .card.card::before {
+        content: '80% off';
+        width: 35%;
+        height: 50px;
+        border-radius:3px 90px 3px ;
+        line-height: 25px;
+        color:white;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: blueviolet;
+        padding: 0px 4px;
+        transform: rotate(-20deg);
+    
+    }
+    .trends{
+        padding: 20px 50px;
+        background-color: rgb(0,0,0,0.01);
+    }
+    .trends .swiper{
+        width: 100%;
+        padding: 50px;
+        
+      }
+    
+      .trends .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 360px;
+        height: 360px;
+      }
+    
+      .trends .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        size: 2px;
+        
+      }
+      footer div{
+        flex-basis:50%;
+        margin: 7px 0px;
+    }
+    
+}
+
+
